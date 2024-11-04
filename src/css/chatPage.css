@@ -1,0 +1,125 @@
+/* Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e5ddd5;
+  }
+  
+  /* Chat Container */
+  .chat-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 30%;
+    background-color: #075e54;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-header {
+    padding: 20px;
+    background-color: #128c7e;
+    text-align: center;
+  }
+  
+  /* Chat List in Sidebar */
+  .chat-list {
+    list-style: none;
+    overflow-y: auto;
+    flex: 1;
+  }
+  
+  .chat-item {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+  
+  .chat-item:hover {
+    background-color: #128c7e;
+  }
+  
+  /* Main Chat Area */
+  .main-chat {
+    width: 70%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-header {
+    padding: 20px;
+    background-color: #128c7e;
+    color: white;
+  }
+  
+  /* Messages Section */
+  .messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Individual Message Styling */
+  .message {
+    max-width: 60%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.5;
+  }
+  
+  .sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  .received {
+    background-color: #ece5dd;
+    align-self: flex-start;
+  }
+  
+  /* Chat Input Area */
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .chat-input button {
+    background-color: #128c7e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #075e54;
+  }
+
+  .name {
+    font-size: 14px;           /* Font size for the name */
+    font-weight: bold;         /* Bold font for emphasis */
+    color: #333;               /* Darker color for the name */
+    margin-bottom: 2px;       /* Space between name and message */
+    text-align: left;          /* Align text to the left */
+}
