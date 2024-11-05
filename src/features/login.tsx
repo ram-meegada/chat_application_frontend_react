@@ -38,8 +38,8 @@ const Login = () => {
       if (api_response.status !== 200) {
         toast.error(api_response.message,  { autoClose: 2000 });
       } else {
-        localStorage.setItem('auth_token', api_response.access_token)
-        navigate("/chat-page", { state: { message: api_response.message, userId: api_response.data.id, name: api_response.data.name } });
+        // localStorage.setItem('auth_token', api_response.access_token)
+        navigate("/otp-verification", { state: { message: api_response.message, userId: api_response.data.id, name: api_response.data.name } });
         // toast.success("Login successfull",  { autoClose: 2000 });
       }
     } catch (error) {

@@ -10,6 +10,7 @@ import {
 import SignUp from "./features/signUp";
 import Login from "./features/login";
 import ChatPage from "./features/chatPage";
+import OtpVerification from "./features/otp_verification";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/chat-page" element={<ChatPage />} />
+        <Route path="/otp-verification" element={<OtpVerification />} />
       </Routes>
     </div>
   );
